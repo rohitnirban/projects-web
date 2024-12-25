@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "UrlHub",
     description: "A full-stack platform to shorten URLs and manage them",
     imageUrl: "/urlhub.png",
-    link: "",
+    link: "https://urhb.in",
     tags: ["Next.js", "React", "Node.js", "MongoDB", "TailwindCSS", "TypeScript"]
   },
   {
