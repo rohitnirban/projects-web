@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="w-full max-w-sm shadow-lg border border-gray-200 rounded-lg overflow-hidden">
+    <Card className="w-full max-w-md shadow-lg border border-gray-200 rounded-lg overflow-hidden">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-gray-800">{project.title}</CardTitle>
       </CardHeader>
@@ -18,9 +18,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <Image
           src={project.imageUrl}
           alt={project.title}
-          width={300}
-          height={200}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          width={400}
+          height={300}
+          className="w-full h-64 object-cover rounded-md mb-4"
         />
         <p className="text-sm text-gray-600 mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2">

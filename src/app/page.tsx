@@ -5,6 +5,8 @@ import { projects } from "@/data/projects";
 import { SearchInput } from "@/components/search-input";
 import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
+import { Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -27,6 +29,20 @@ export default function Home() {
 
   return (
     <main className="container mx-auto px-4 py-8">
+      <div className="flex items-center space-x-4 absolute top-0 left-0 p-4">
+        <Link href="https://rohitnirban.com" target="_blank" className="text-lg font-semibold text-gray-800 hover:underline flex items-center">
+          <ExternalLink className="mr-2" />
+          My Portfolio
+        </Link>
+
+      </div>
+      <div className="flex items-center space-x-4 absolute top-0 right-0 p-4">
+        <Link href="https://github.com/rohitnirban" target="_blank" className="text-lg font-semibold text-gray-800 hover:underline flex items-center">
+          <Github className="mr-2" />
+          GitHub
+        </Link>
+      </div>
+
       {/* Header Section */}
       <section className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-4 text-gray-800">My Project Showcase</h1>
@@ -46,11 +62,10 @@ export default function Home() {
             <Badge
               key={tag}
               variant={selectedTags.includes(tag) ? "default" : "outline"}
-              className={`cursor-pointer transition-colors ${
-                selectedTags.includes(tag)
-                  ? "bg-blue-100 text-blue-800 border-blue-300"
-                  : "hover:bg-gray-100"
-              }`}
+              className={`cursor-pointer transition-colors ${selectedTags.includes(tag)
+                ? "bg-blue-100 text-blue-800 border-blue-300"
+                : "hover:bg-gray-100"
+                }`}
               onClick={() => toggleTag(tag)}
             >
               {tag}
