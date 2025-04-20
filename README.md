@@ -26,4 +26,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Project Structure
+
+- `/components` - Reusable UI components
+- `/data` - Project data and other static content
+- `/types` - TypeScript type definitions
+- `/app` - Next.js app router pages
+
 
