@@ -33,4 +33,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `/types` - TypeScript type definitions
 - `/app` - Next.js app router pages
 
+## Technologies Used
 
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+- shadcn/ui components
+
+## Deployment
+
+The project is configured for easy deployment on Vercel.
+
+## License
+
+MIT
